@@ -1,0 +1,15 @@
+<ModOps>
+
+  <!-- Asset ModOp workaround: use it once before you use asset modops -->
+  <ModOp Add="/AssetList/Groups[last()]">
+    <Group>
+      <Assets />
+    </Group>
+  </ModOp>
+
+  <!-- first GUID for this mod  200010xxx -->
+
+
+</ModOps>
+
+

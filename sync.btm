@@ -1,0 +1,3 @@
+robocopy "D:\dev\Anno-117\[Misc] Portraits from 1800 (ewjax)\data" "C:\Users\ewjax\Documents\Anno 117 - Pax Romana\mods\[Misc] Portraits from 1800 (ewjax)\data" /mir
+copy /u "D:\dev\Anno-117\[Misc] Portraits from 1800 (ewjax)\modinfo.json" "C:\Users\ewjax\Documents\Anno 117 - Pax Romana\mods\[Misc] Portraits from 1800 (ewjax)"
+
