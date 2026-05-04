@@ -17,11 +17,49 @@
 
     <ModOp Type="Merge" GUID="5473" Path="Values/Object">
     <ModOp Merge="@5473/Object">
+
+    <ModOp Type="Merge" GUID="5473" Path="Values/ShipModuleOwner/ShipModulesConfig">
+
     -->
 
 	<!-- fancy icon -->
     <ModOp Merge="@5473/Standard">
         <IconFilename>data/ewjax/ui/fhd/base/icon_content/ship/fancy_flagship.png</IconFilename>
+    </ModOp>
+
+	<!-- 
+	customize number of different modules
+	note: the total number of modules (Archers + Scorpion + Catapult) 
+	must be less than or equal to FOUR, and there is no	error checking.  
+	-->
+	<ModOp Merge="@5473/ShipModuleOwner/ShipModulesConfig">
+		<ShipModulesConfig>
+			<Archers>
+				<MaximumModuleCount>4</MaximumModuleCount>
+				<DefaultModuleCount>0</DefaultModuleCount>
+			</Archers>
+			<Scorpion>
+				<MaximumModuleCount>4</MaximumModuleCount>
+				<DefaultModuleCount>0</DefaultModuleCount>
+			</Scorpion>
+			<Catapult>
+				<MaximumModuleCount>4</MaximumModuleCount>
+				<DefaultModuleCount>0</DefaultModuleCount>
+			</Catapult>
+		</ShipModulesConfig>
+
+    </ModOp>
+
+    <ModOp Merge="@5473/ShipModuleOwner/ShipModulesConfig/Archers/DefaultModuleCount">
+        <ModValue Insert="$num_flagship_archers" />
+    </ModOp>
+
+    <ModOp Merge="@5473/ShipModuleOwner/ShipModulesConfig/Scorpion/DefaultModuleCount">
+        <ModValue Insert="$num_flagship_scorpions" />
+    </ModOp>
+
+    <ModOp Merge="@5473/ShipModuleOwner/ShipModulesConfig/Catapult/DefaultModuleCount">
+        <ModValue Insert="$num_flagship_catapults" />
     </ModOp>
 
     <!-- reactivate the custom flagship skins -->

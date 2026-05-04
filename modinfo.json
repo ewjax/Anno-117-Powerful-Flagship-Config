@@ -13,8 +13,30 @@
     "Require": ["powerful-flagship"],
     "Optional": [],
     "LoadAfter": ["powerful-flagship"],
-    "Deprecate": [],
-    "Incompatible": []
+    "Deprecate": []
+  },
+  "Options": {
+    "num_flagship_archers": {
+      "label": "Number of Flagship Archers (Archers+Scorpions+Catapults must be <= 4)",
+      "type": "enum",
+      "default": "0",
+      "values": ["0", "1", "2", "3", "4"],
+      "labels": ["Flagship Archers: 0", "Flagship Archers: 1", "Flagship Archers: 2", "Flagship Archers: 3", "Flagship Archers: 4"]
+    },
+    "num_flagship_scorpions": {
+      "label": "Number of Flagship Scorpions (Archers+Scorpions+Catapults must be <= 4)",
+      "type": "enum",
+      "default": "0",
+      "values": ["0", "1", "2", "3", "4"],
+      "labels": ["Flagship Scorpions: 0", "Flagship Scorpions: 1", "Flagship Scorpions: 2", "Flagship Scorpions: 3", "Flagship Scorpions: 4"]
+    },
+    "num_flagship_catapults": {
+      "label": "Number of Flagship Catapults (Archers+Scorpions+Catapults must be <= 4)",
+      "type": "enum",
+      "default": "0",
+      "values": ["0", "1", "2", "3", "4"],
+      "labels": ["Flagship Catapults: 0", "Flagship Catapults: 1", "Flagship Catapults: 2", "Flagship Catapults: 3", "Flagship Catapults: 4"]
+    }
   },
   "Category": {
     "Chinese": "Gameplay",
@@ -55,23 +77,6 @@
     "Spanish": "#  Powerful Flaghsip - Configurator \n\n This mod allows easy configuration of the Powerful Flagship mod by sssCouchPotato",
     "Taiwanese": "#  Powerful Flaghsip - Configurator \n\n This mod allows easy configuration of the Powerful Flagship mod by sssCouchPotato"
   },
-  "KnownIssues": [
-    {
-      "Chinese": null,
-      "English": null,
-      "French": null,
-      "German": null,
-      "Italian": null,
-      "Japanese": null,
-      "Korean": null,
-      "Polish": null,
-      "Russian": null,
-      "Spanish": null,
-      "Taiwanese": null
-    }
-  ],
-  "DLCDependencies": [],
   "CreatorName": "ewjax",
-  "CreatorContact": "",
-  "Image": null
+  "CreatorContact": ""
 }
