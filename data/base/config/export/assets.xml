@@ -1,14 +1,59 @@
 <ModOps>
 
-  <!-- Asset ModOp workaround: use it once before you use asset modops -->
-  <ModOp Add="/AssetList/Groups[last()]">
-    <Group>
-      <Assets />
-    </Group>
-  </ModOp>
+    <!-- Asset ModOp workaround: use it once before you use asset modops -->
+    <ModOp Add="/AssetList/Groups[last()]">
+        <Group>
+            <Assets />
+        </Group>
+    </ModOp>
 
-  <!-- first GUID for this mod  200010xxx -->
+    <!--
+    new style asset modop: use Type="Replace" or "Merge" and specify the path to the 
+    Object you want to modify, then put the modified Object in the ModOp body, 
+    you can modify any field of the Object this way, and you can also add 
+    new fields if needed, just make sure the GUID of the Object is correct 
+    and matches the one in the game data, otherwise it will create a new 
+    Object instead of modifying the existing one
 
+    <ModOp Type="Merge" GUID="5473" Path="Values/Object">
+    <ModOp Merge="@5473/Object">
+    -->
+
+    <!-- activate the custom flagship skins -->
+    <ModOp Merge="@5473/Object">
+        <Object>
+			<Skins>
+				<SkinList>
+					<Item>
+						<SkinAssetGuid>90967</SkinAssetGuid>
+					</Item>
+					<Item>
+						<SkinAssetGuid>90968</SkinAssetGuid>
+					</Item>
+					<Item>
+						<SkinAssetGuid>91039</SkinAssetGuid>
+					</Item>
+					<Item>
+						<SkinAssetGuid>91040</SkinAssetGuid>
+					</Item>
+					<Item>
+						<SkinAssetGuid>122164</SkinAssetGuid>
+					</Item>
+					<Item>
+						<SkinAssetGuid>119864</SkinAssetGuid>
+					</Item>
+					<Item>
+						<SkinAssetGuid>119868</SkinAssetGuid>
+					</Item>
+					<Item>
+						<SkinAssetGuid>119869</SkinAssetGuid>
+					</Item>
+				</SkinList>
+			</Skins>
+			<AssignDefaultProfile>1</AssignDefaultProfile>
+			<IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        </Object>
+    </ModOp>
 
 </ModOps>
 
