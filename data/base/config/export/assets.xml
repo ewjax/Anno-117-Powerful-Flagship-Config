@@ -19,7 +19,12 @@
     <ModOp Merge="@5473/Object">
     -->
 
-    <!-- activate the custom flagship skins -->
+	<!-- fancy icon -->
+    <ModOp Merge="@5473/Standard">
+        <IconFilename>data/ewjax/ui/fhd/base/icon_content/ship/fancy_flagship.png</IconFilename>
+    </ModOp>
+
+    <!-- reactivate the custom flagship skins -->
     <ModOp Merge="@5473/Object">
         <Object>
 			<Skins>
