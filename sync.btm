@@ -1,3 +1,4 @@
 robocopy "D:\dev\Anno-117\[Gameplay] Powerful Flagship - Config (ewjax)\data" "C:\Users\ewjax\Documents\Anno 117 - Pax Romana\mods\[Gameplay] Powerful Flagship - Config (ewjax)\data" /mir
-copy /u "D:\dev\Anno-117\[Gameplay] Powerful Flagship - Config (ewjax)\modinfo.json" "C:\Users\ewjax\Documents\Anno 117 - Pax Romana\mods\[Gameplay] Powerful Flagship - Config (ewjax)\modinfo.json"
+copy /u "D:\dev\Anno-117\[Gameplay] Powerful Flagship - Config (ewjax)\modinfo.json" "C:\Users\ewjax\Documents\Anno 117 - Pax Romana\mods\[Gameplay] Powerful Flagship - Config (ewjax)"
+copy /u "D:\dev\Anno-117\[Gameplay] Powerful Flagship - Config (ewjax)\thumbnail.png" "C:\Users\ewjax\Documents\Anno 117 - Pax Romana\mods\[Gameplay] Powerful Flagship - Config (ewjax)"
 
